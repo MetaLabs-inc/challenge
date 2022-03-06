@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+import AuthBanner from '../components/AuthBanner'
 
 const Home: NextPage = () => {
   return (
@@ -16,9 +16,11 @@ const Home: NextPage = () => {
           Shift App
         </h1>
 
-        <p>
+        <p className='my-3'>
           Track your shifts.
         </p>
+
+        <AuthBanner />
       </main>
     </div>
   )
